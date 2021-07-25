@@ -34,7 +34,6 @@ body {
 
 .header {
   position: relative;
-  border-bottom: 2px solid var(--color-grey);
   padding: 0 20px;
 }
 
@@ -245,7 +244,7 @@ body {
 }
 
 .status__action-mistakes-mode {
-  width: 60%;
+  width: 100%;
 }
 
 .status__action-fast-mode {
