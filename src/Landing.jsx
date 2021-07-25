@@ -1,11 +1,13 @@
 import React from 'react'
-import { Game } from './Game'
-import './App.css'
-import Instruction from './components/Instructions'
+import Instruction from './components/layout/Instruction'
+import Game from './Game'
+import './StartPage.css'
 import { SudokuProvider } from './context/SudokuContext'
+import './Animation.css'
 
-var showing = 1
-export const App = () => {
+var showing = 0
+const [stat, SetStat] = useState(0)
+const landingPage = () => {
   function showMode() {
     showing = 1
   }
@@ -34,9 +36,10 @@ export const App = () => {
           <span>How to play</span>
         </button>
       </div>
+
       {popup}
     </div>
   )
 }
 
-export default App
+export default landingPage

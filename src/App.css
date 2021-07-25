@@ -77,9 +77,6 @@ body {
   clear: both;
 }
 
-/**
- * Inner Container - contains both Game Section & Status Section.
- */
 .innercontainer {
   display: flex;
   color: var(--color-grey);
@@ -87,9 +84,6 @@ body {
   padding: 0 20px;
 }
 
-/**
- * Game Section
- */
 .game {
   width: 70%;
 }
@@ -155,9 +149,6 @@ body {
   border-right: 2px solid var(--color-grey);
 }
 
-/**
- * Status Section
- */
 .status {
   width: 30%;
 }
@@ -302,7 +293,6 @@ body {
   padding-top: 50px;
 }
 
-/* Hide default HTML checkbox */
 .status__action-mistakes-mode-switch input,
 .status__action-fast-mode-switch input {
   opacity: 0;
@@ -310,7 +300,6 @@ body {
   height: 0;
 }
 
-/* The slider */
 .status__action-mistakes-mode-slider,
 .status__action-fast-mode-slider {
   position: absolute;
@@ -378,9 +367,6 @@ input:checked + .status__action-fast-mode-slider:before {
   color: var(--color-blue);
 }
 
-/**
- * Overlay Section
- */
 .overlay {
   position: fixed;
   display: none;
@@ -422,9 +408,6 @@ input:checked + .status__action-fast-mode-slider:before {
   color: var(--color-blue);
 }
 
-/**
- * Add this to blur any DIV!
- */
 .blur {
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
