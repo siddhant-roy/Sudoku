@@ -9,7 +9,9 @@ const StartButtons = ({showMode}) => {
     return (
         <div className="btnGroup">
         <button className="btn-1" onClick={showMode}>
-          <span>Start game</span>
+         <span>
+             ▷
+        </span> 
         </button>
         {/* <button className="btn-4" onClick={showInstruction}>
           <span>How to play</span>
