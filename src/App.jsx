@@ -1,67 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Game } from './Game'
 import './App.css'
-import Instruction from './components/Instructions'
 import { SudokuProvider } from './context/SudokuContext'
-import { useState } from 'react';
 import StartButtons from './StartButtons'
 import Instructions from './Instructions'
 import InstructionPage from './InstructionPage'
 
-
 export const App = () => {
+  const [showing, setShowing] = useState(false)
+  const [showBtn, setShowBtn] = useState(true)
+  const [instr, setInstr] = useState(true)
+  const [inst, setInst] = useState(false)
 
-  const [showing, setShowing] = useState(false);
-  const [showBtn, setShowBtn] = useState(false);
-  const [instr, setInstr] = useState(false);
-
-
-  function showMode() {
+  function showGame() {
     setShowing(true)
-    setShowBtn(true)
-    setInstr(true)
+    setShowBtn(false)
+    setInstr(false)
+    setInst(false)
   }
-  {/*function showInstruction() {
-     showing = 2
-   }
-   function hideInstruction() {
-     showing = 0
-   }*/}
-  
-  {/* console.log(showing);
-  const popup = */}
+
+  function showInstr() {
+    setShowing(false)
+    setShowBtn(false)
+    setInstr(false)
+    setInst(true)
+  }
 
   return (
-
-
-
     <div className="mainPage">
-      {showing === false ? (
-        ""
-
-      ) : <SudokuProvider>
-        <Game />
-      </SudokuProvider>}
-
-
-      {showBtn === false ? (
-        <StartButtons showMode={showMode} />
+      {showing ? (
+        <SudokuProvider>
+          <Game />
+        </SudokuProvider>
       ) : null}
-      {/*<div className="btnGroup">
-        <button className="btn-1" onClick={showMode}>
-          <span>Start game</span>
-        </button>
-        <button className="btn-4" onClick={showInstruction}>
-          <span>How to play</span>
-        </button>
-      </div>
-       {popup} */}
 
-      {instr === false ? (
-        <Instructions showMode={showMode} />
+      {showBtn ? <StartButtons showGame={showGame} /> : null}
 
-      ) : <InstructionPage />}
+      {instr ? <Instructions showInstr={showInstr} /> : null}
 
+      {inst ? <InstructionPage showGame={showGame} /> : null}
     </div>
   )
 }

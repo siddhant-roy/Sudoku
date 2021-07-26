@@ -1,24 +1,14 @@
 import React from 'react'
-import { Game } from './Game'
 import './App.css'
-import Instruction from './components/Instructions'
-import { SudokuProvider } from './context/SudokuContext'
-import { useState } from 'react'
 
-const StartButtons = ({showMode}) => {
-    return (
-        <div className="btnGroup">
-        <button className="btn-1" onClick={showMode}>
-         <span>
-             ▷
-        </span> 
-        </button>
-        {/* <button className="btn-4" onClick={showInstruction}>
-          <span>How to play</span>
-        </button> */}
-      </div>
-      
-    )
+const StartButtons = ({ showGame }) => {
+  return (
+    <div className="btnGroup">
+      <button className="btn-1" onClick={showGame}>
+        <span>▷</span>
+      </button>
+    </div>
+  )
 }
 
-export default StartButtons;
+export default StartButtons
