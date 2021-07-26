@@ -36,18 +36,33 @@ body {
   font-size: xx-large;
   color: aliceblue;
   font-weight: 800;
-  pad: 10%;
-  background-color: rgb(51, 6, 71);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-stretch: expanded;
+  line-height: normal;
+  margin: 2%;
+}
+
+.koko {
+  background-color: #b9ea9a;
+  margin: 4%;
+  padding: 2%;
+  border-radius: 66px;
+  background: #200a5e;
+  box-shadow: -28px -28px 56px #1c0950, 28px 28px 56px #2e0f83;
+  background: rgba(14, 22, 92, 0.55);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border: 1px solid rgba(53, 14, 160, 0.33);
 }
 
 .btn-1 {
   margin: 5px;
   color: white;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   border: none;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(3px);
   border-radius: 50%;
   box-shadow: 6px 4px 39px -10px rgba(23, 23, 23, 0.75);
 }
@@ -61,13 +76,37 @@ body {
 .btn-2 {
   margin: 5px;
   color: white;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  border-radius: 50%;
+  box-shadow: 6px 4px 39px -10px rgba(23, 23, 23, 0.75);
+}
+
+.btn-2 span {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-left: 0px;
+}
+
+.btn-3 {
+  margin: 5px;
+  color: white;
+  width: 120px;
+  height: 120px;
   border: none;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(2px);
   border-radius: 50%;
   box-shadow: 6px 4px 39px -10px rgba(23, 23, 23, 0.75);
+}
+
+.btn-3 span {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-left: 2px;
 }
 
 .container {
