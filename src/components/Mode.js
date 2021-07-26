@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 /**
  * React component for the Mistakes Mode / Fast Mode
@@ -6,19 +6,15 @@ import React from 'react';
  */
 export const Mode = (props) => {
   return (
-    <div className={
-      "status__action-mistakes-mode"}>
-      <label className={
-        "status__action-mistakes-mode-switch"}>
+    <div className={'status__action-mistakes-mode'}>
+      <label className={'status__action-mistakes-mode-switch'}>
         <input type="checkbox" />
-        <span className={
-          "status__action-mistakes-mode-slider"}
+        <span
+          className={'status__action-mistakes-mode-slider'}
           onClick={props.onClickMode}
         ></span>
       </label>
-      <p className="status__action-text">{
-        'Mistakes Mode'}
-      </p>
+      <p className="status__action-text">{"Don't Allow Mistakes"}</p>
     </div>
   )
 }
