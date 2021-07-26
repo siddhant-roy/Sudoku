@@ -113,7 +113,7 @@ body {
   max-width: 700px;
   min-width: 270px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 .header {
@@ -123,9 +123,9 @@ body {
 
 .header h1 {
   float: left;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 2.75;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 2;
   color: var(--color-grey);
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
@@ -142,16 +142,19 @@ body {
 
 .header h2 {
   float: right;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 500;
   line-height: 2;
   color: var(--color-grey);
-  padding-top: 16px;
+  padding-top: 17px;
   cursor: pointer;
 }
 
 .header h2:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.headoo {
+  font-size: 2rem;
 }
 
 .header::after {
